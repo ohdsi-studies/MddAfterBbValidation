@@ -1,6 +1,6 @@
 # Copyright 2018 Observational Health Data Sciences and Informatics
 #
-# This file is part of depressionValidation
+# This file is part of MddAfterBbVal
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,12 +16,12 @@
 
 # Format and check code ---------------------------------------------------
 OhdsiRTools::formatRFolder()
-OhdsiRTools::checkUsagePackage("depressionValidation")
+OhdsiRTools::checkUsagePackage("MddAfterBbVal")
 OhdsiRTools::updateCopyrightYearFolder()
 
 # Create manual -----------------------------------------------------------
-shell("rm extras/depressionValidation.pdf")
-shell("R CMD Rd2pdf ./ --output=extras/depressionValidation.pdf")
+shell("rm extras/MddAfterBbVal.pdf")
+shell("R CMD Rd2pdf ./ --output=extras/MddAfterBbVal.pdf")
 
 # Create vignette ---------------------------------------------------------
 rmarkdown::render("vignettes/UsingSkeletonValidationPackage.Rmd",
@@ -36,7 +36,7 @@ OhdsiRTools::insertCohortDefinitionSetInPackage(fileName = "CohortsToCreate.csv"
                                                 insertTableSql = TRUE,
                                                 insertCohortCreationR = TRUE,
                                                 generateStats = FALSE,
-                                                packageName = "depressionValidation")
+                                                packageName = "MddAfterBbVal")
 
 # transport the plp models -------------------------------------------------
 transportPlpModels(analysesDir= "modelFolder",
@@ -44,4 +44,4 @@ transportPlpModels(analysesDir= "modelFolder",
                    databaseName = 'sharable name of development data')
 
 # Store environment in which the study was executed -----------------------
-OhdsiRTools::insertEnvironmentSnapshotInPackage("depressionValidation")
+OhdsiRTools::insertEnvironmentSnapshotInPackage("MddAfterBbVal")

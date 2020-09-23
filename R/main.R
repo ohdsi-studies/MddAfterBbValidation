@@ -62,7 +62,7 @@ execute <- function(connectionDetails,
     ParallelLogger::logInfo("Validating Models")
     # for each model externally validate
     analysesLocation <- system.file("plp_models",
-                                    package = "depressionValidation")
+                                    package = "MddAfterBbVal")
     val <- PatientLevelPrediction::evaluateMultiplePlp(analysesLocation = analysesLocation,
                                                        outputLocation = outputFolder,
                                                        connectionDetails = connectionDetails,

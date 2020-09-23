@@ -1,4 +1,4 @@
-depressionValidation
+MddAfterBbVal
 ======================
 
 Introduction
@@ -13,7 +13,7 @@ Features
 
 Technology
 ==========
-  depressionValidation is an R package.
+  MddAfterBbVal is an R package.
 
 System Requirements
 ===================
@@ -28,7 +28,7 @@ Dependencies
   
 Guide
 ============
-A general guide for running a valdiation study package is available here: [Skeleton Validation Study guide](https://github.com/OHDSI/StudyProtocolSandbox/tree/master/depressionValidation/inst/doc/UsingSkeletonValidationPackage.pdf)
+A general guide for running a valdiation study package is available here: [Skeleton Validation Study guide](https://github.com/OHDSI/StudyProtocolSandbox/tree/master/MddAfterBbVal/inst/doc/UsingSkeletonValidationPackage.pdf)
   
   
 A1. Installing the package from GitHub
@@ -36,7 +36,7 @@ A1. Installing the package from GitHub
 ```r
 # To install the package from github:
 install.packages("devtools")
-devtools::install_github("jshsh7553/depressionValidation")
+devtools::install_github("jshsh7553/MddAfterBbVal")
 ```
 
 A2. Building the package inside RStudio
@@ -47,13 +47,13 @@ A2. Building the package inside RStudio
 B. Getting Started
 ===============
   1. Make sure to have either: installed (A1) or built (A2) the package 
-  2. In R, run the code in 'extras/codeToRun.R' (see [Skeleton Validation Study guide](https://github.com/OHDSI/StudyProtocolSandbox/tree/master/depressionValidation/inst/doc/UsingSkeletonValidationPackage.pdf) for guideance)
+  2. In R, run the code in 'extras/codeToRun.R' (see [Skeleton Validation Study guide](https://github.com/OHDSI/StudyProtocolSandbox/tree/master/MddAfterBbVal/inst/doc/UsingSkeletonValidationPackage.pdf) for guideance)
 
 
 C. Example Code
 ===============
 ```r
-library(depressionValidation)
+library(MddAfterBbVal)
 
 # add details of your database setting:
 databaseName <- 'add a shareable name for the database you are currently validating on'
@@ -68,7 +68,7 @@ cohortDatabaseSchema <- 'your work database schema'
 oracleTempSchema <- NULL
 
 # the name of the table that will be created in cohortDatabaseSchema to hold the cohorts
-cohortTable <- 'depressionValidationCohortTable'
+cohortTable <- 'MddAfterBbValCohortTable'
 
 # the location to save the prediction models results to:
 # NOTE: if you set the outputFolder to the 'Validation' directory in the 
@@ -90,7 +90,7 @@ connectionDetails <- DatabaseConnector::createConnectionDetails(dbms = dbms,
                                                                 port = port)
 
 # Now run the study:
-depressionValidation::execute(connectionDetails = connectionDetails,
+MddAfterBbVal::execute(connectionDetails = connectionDetails,
                  databaseName = databaseName,
                  cdmDatabaseSchema = cdmDatabaseSchema,
                  cohortDatabaseSchema = cohortDatabaseSchema,
@@ -104,7 +104,7 @@ depressionValidation::execute(connectionDetails = connectionDetails,
                  sampleSize = NULL)
                  
 # If the validation study runs to completion and returns results, package it up ready to share with the study owner (but remove counts less than 10) by running:
-depressionValidation::execute(connectionDetails = connectionDetails,
+MddAfterBbVal::execute(connectionDetails = connectionDetails,
                  databaseName = databaseName,
                  cdmDatabaseSchema = cdmDatabaseSchema,
                  cohortDatabaseSchema = cohortDatabaseSchema,
@@ -119,7 +119,7 @@ depressionValidation::execute(connectionDetails = connectionDetails,
                  
                  
 # If your target cohort is large use the sampleSize setting to sample from the cohort:
-depressionValidation::execute(connectionDetails = connectionDetails,
+MddAfterBbVal::execute(connectionDetails = connectionDetails,
                  databaseName = databaseName,
                  cdmDatabaseSchema = cdmDatabaseSchema,
                  cohortDatabaseSchema = cohortDatabaseSchema,
@@ -136,8 +136,8 @@ depressionValidation::execute(connectionDetails = connectionDetails,
 
 License
 =======
-  depressionValidation is licensed under Apache License 2.0
+  MddAfterBbVal is licensed under Apache License 2.0
 
 Development
 ===========
-  depressionValidation is being developed in R Studio.
+  MddAfterBbVal is being developed in R Studio.

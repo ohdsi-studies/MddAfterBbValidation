@@ -5,11 +5,11 @@
 "actions":[{
 "type": "fileNameFindAndReplace",
 "input": "packageName",
-"find": "depressionValidation"
+"find": "MddAfterBbVal"
 },{
 "type": "stringFindAndReplace",
 "input": "packageName",
-"find": "depressionValidation"
+"find": "MddAfterBbVal"
 },{
 "type": "jsonArrayToCsv",
 "input": "cohortDefinitions",
