@@ -36,7 +36,7 @@ A1. Installing the package from GitHub
 ```r
 # To install the package from github:
 install.packages("devtools")
-devtools::install_github("jshsh7553/MddAfterBbVal")
+devtools::install_github("ohdsi-studies/MddAfterBbVal")
 ```
 
 A2. Building the package inside RStudio
