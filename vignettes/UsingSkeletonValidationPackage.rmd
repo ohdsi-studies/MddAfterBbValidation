@@ -35,25 +35,25 @@ This vignette describes how one can use the package skeleton for validating pati
 ## Open the project in Rstudio
 Skip this step if you are just running the study via github (skip to ' Running the package')
 
-Make sure to have RStudio installed.  Then open the R project downloaded from ATLAS by decompressing the downloaded folder and clicking on the <MddAfterBbVal>.Rproj file (where <MddAfterBbVal> is replaced by the study name you specified in ATLAS).  This should open an RStudio session.
+Make sure to have RStudio installed.  Then open the R project downloaded from ATLAS by decompressing the downloaded folder and clicking on the <MddAfterBbValidation>.Rproj file (where <MddAfterBbValidation> is replaced by the study name you specified in ATLAS).  This should open an RStudio session.
 
 ## Building the package
 Skip this step if you are just running the study via github (skip to ' Running the package') 
 
-First you need to build the R package.  This creates a library you can load to run the validation study.  To build the package click 'Build' on the top right hand side tab menu (there are tabs: 'Environment', 'History', 'Connections', 'Build', 'Git').  Once in 'Build' click the 'Install and Restart' button.  This will now build your package and create the R library.  If it succeeds you will see '* DONE (<MddAfterBbVal>)', if it fails you will see red output and the library may not be created.  Please report an issue to: https://github.com/OHDSI/PatientLevelPrediction/issues if your library does not get created.
+First you need to build the R package.  This creates a library you can load to run the validation study.  To build the package click 'Build' on the top right hand side tab menu (there are tabs: 'Environment', 'History', 'Connections', 'Build', 'Git').  Once in 'Build' click the 'Install and Restart' button.  This will now build your package and create the R library.  If it succeeds you will see '* DONE (<MddAfterBbValidation>)', if it fails you will see red output and the library may not be created.  Please report an issue to: https://github.com/OHDSI/PatientLevelPrediction/issues if your library does not get created.
 
 ## Running the package
 If running the study from github you first need to install the package:
 ```{r eval=FALSE}
 # To install the package from github:
 install.packages("devtools")
-devtools::install_github("OHDSI-studies/MddAfterBbVal")
+devtools::install_github("OHDSI-studies/MddAfterBbValidation")
 ```
 
 To run the study, open the extras/CodeToRun.R R script (the file called `CodeToRun.R` in the `extras` folder).  This folder specifies the R variables you need to define (e.g., outputFolder and database connection settings). See the R help system for details:
 
 ```{r eval=FALSE}
-library(MddAfterBbVal)
+library(MddAfterBbValidation)
 ?execute
 ```
 

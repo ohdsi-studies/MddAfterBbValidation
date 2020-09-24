@@ -1,4 +1,4 @@
-library(MddAfterBbVal)
+library(MddAfterBbValidation)
 
 # add details of your database setting:
 databaseName <- 'add a shareable name for the database you are currently validating on'
@@ -13,7 +13,7 @@ cohortDatabaseSchema <- 'your work database schema'
 oracleTempSchema <- NULL
 
 # the name of the table that will be created in cohortDatabaseSchema to hold the cohorts
-cohortTable <- 'MddAfterBbValCohortTable'
+cohortTable <- 'MddAfterBbValidationCohortTable'
 
 # the location to save the prediction models results to:
 outputFolder <- '../Validation'
@@ -32,7 +32,7 @@ connectionDetails <- DatabaseConnector::createConnectionDetails(dbms = dbms,
                                                                 port = port)
 
 # Now run the study
-MddAfterBbVal::execute(connectionDetails = connectionDetails,
+MddAfterBbValidation::execute(connectionDetails = connectionDetails,
                                  databaseName = databaseName,
                                  cdmDatabaseSchema = cdmDatabaseSchema,
                                  cohortDatabaseSchema = cohortDatabaseSchema,
@@ -50,7 +50,7 @@ MddAfterBbVal::execute(connectionDetails = connectionDetails,
 
 # to package the results run (run after the validation results are complete):
 # NOTE: the minCellCount = N will remove any result with N patients or less
-MddAfterBbVal::execute(connectionDetails = connectionDetails,
+MddAfterBbValidation::execute(connectionDetails = connectionDetails,
                                  databaseName = databaseName,
                                  cdmDatabaseSchema = cdmDatabaseSchema,
                                  cohortDatabaseSchema = cohortDatabaseSchema,
