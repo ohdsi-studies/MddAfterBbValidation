@@ -26,7 +26,7 @@ Features
 
 Technology
 ==========
-  MddAfterBbVal is an R package.
+  MddAfterBbValidation is an R package.
 
 System Requirements
 ===================
@@ -41,7 +41,7 @@ Dependencies
   
 Guide
 ============
-A general guide for running a valdiation study package is available here: [Skeleton Validation Study guide](https://github.com/OHDSI/StudyProtocolSandbox/tree/master/MddAfterBbVal/inst/doc/UsingSkeletonValidationPackage.pdf)
+A general guide for running a valdiation study package is available here: [Skeleton Validation Study guide](https://github.com/OHDSI/StudyProtocolSandbox/tree/master/MddAfterBbValidation/inst/doc/UsingSkeletonValidationPackage.pdf)
   
   
 A1. Installing the package from GitHub
@@ -81,7 +81,7 @@ cohortDatabaseSchema <- 'your work database schema'
 oracleTempSchema <- NULL
 
 # the name of the table that will be created in cohortDatabaseSchema to hold the cohorts
-cohortTable <- 'MddAfterBbValCohortTable'
+cohortTable <- 'MddAfterBbValidationCohortTable'
 
 # the location to save the prediction models results to:
 # NOTE: if you set the outputFolder to the 'Validation' directory in the 
@@ -103,7 +103,7 @@ connectionDetails <- DatabaseConnector::createConnectionDetails(dbms = dbms,
                                                                 port = port)
 
 # Now run the study:
-MddAfterBbVal::execute(connectionDetails = connectionDetails,
+MddAfterBbValidation::execute(connectionDetails = connectionDetails,
                  databaseName = databaseName,
                  cdmDatabaseSchema = cdmDatabaseSchema,
                  cohortDatabaseSchema = cohortDatabaseSchema,
@@ -117,7 +117,7 @@ MddAfterBbVal::execute(connectionDetails = connectionDetails,
                  sampleSize = NULL)
                  
 # If the validation study runs to completion and returns results, package it up ready to share with the study owner (but remove counts less than 10) by running:
-MddAfterBbVal::execute(connectionDetails = connectionDetails,
+MddAfterBbValidation::execute(connectionDetails = connectionDetails,
                  databaseName = databaseName,
                  cdmDatabaseSchema = cdmDatabaseSchema,
                  cohortDatabaseSchema = cohortDatabaseSchema,
@@ -132,7 +132,7 @@ MddAfterBbVal::execute(connectionDetails = connectionDetails,
                  
                  
 # If your target cohort is large use the sampleSize setting to sample from the cohort:
-MddAfterBbVal::execute(connectionDetails = connectionDetails,
+MddAfterBbValidation::execute(connectionDetails = connectionDetails,
                  databaseName = databaseName,
                  cdmDatabaseSchema = cdmDatabaseSchema,
                  cohortDatabaseSchema = cohortDatabaseSchema,
@@ -149,8 +149,8 @@ MddAfterBbVal::execute(connectionDetails = connectionDetails,
 
 License
 =======
-  MddAfterBbVal is licensed under Apache License 2.0
+  MddAfterBbValidation is licensed under Apache License 2.0
 
 Development
 ===========
-  MddAfterBbVal is being developed in R Studio.
+  MddAfterBbValidation is being developed in R Studio.
