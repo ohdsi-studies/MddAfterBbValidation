@@ -1,5 +1,18 @@
-MddAfterBbValidation
-======================
+Prediction of incident major depressive disorder in cardiovascular patients using beta blockers
+=============
+
+<img src="https://img.shields.io/badge/Study%20Status-Started-blue.svg" alt="Study Status: Started">
+
+- Analytics use case(s): Patient-Level Prediction
+- Study type: Clinical Application
+- Tags: OHDSI, BB, MDD
+- Study lead: Suho Jin, Ajou University School of Medicine, Korea; Seng Chan You, Ajou University School of Medicine, Korea;
+- Study lead forums tag: [Suho_Jin](https://forums.ohdsi.org/u/Suho_Jin), [SCYou](https://forums.ohdsi.org/u/SCYou)
+- Study start date: 01/09/2020
+- Study end date: 31/12/2020
+- Protocol: **-**
+- Publications: **-**
+- Results explorer: **-**
 
 Introduction
 ============
@@ -13,7 +26,7 @@ Features
 
 Technology
 ==========
-  MddAfterBbValidation is an R package.
+  MddAfterBbVal is an R package.
 
 System Requirements
 ===================
@@ -28,7 +41,7 @@ Dependencies
   
 Guide
 ============
-A general guide for running a valdiation study package is available here: [Skeleton Validation Study guide](https://github.com/OHDSI/StudyProtocolSandbox/tree/master/MddAfterBbValidation/inst/doc/UsingSkeletonValidationPackage.pdf)
+A general guide for running a valdiation study package is available here: [Skeleton Validation Study guide](https://github.com/OHDSI/StudyProtocolSandbox/tree/master/MddAfterBbVal/inst/doc/UsingSkeletonValidationPackage.pdf)
   
   
 A1. Installing the package from GitHub
@@ -36,7 +49,7 @@ A1. Installing the package from GitHub
 ```r
 # To install the package from github:
 install.packages("devtools")
-devtools::install_github("ohdsi-studies/MddAfterBbValidation")
+devtools::install_github("ohdsi-studies/MddAfterBbVal")
 ```
 
 A2. Building the package inside RStudio
@@ -47,13 +60,13 @@ A2. Building the package inside RStudio
 B. Getting Started
 ===============
   1. Make sure to have either: installed (A1) or built (A2) the package 
-  2. In R, run the code in 'extras/codeToRun.R' (see [Skeleton Validation Study guide](https://github.com/OHDSI/StudyProtocolSandbox/tree/master/MddAfterBbValidation/inst/doc/UsingSkeletonValidationPackage.pdf) for guideance)
+  2. In R, run the code in 'extras/codeToRun.R' (see [Skeleton Validation Study guide](https://github.com/OHDSI/StudyProtocolSandbox/tree/master/MddAfterBbVal/inst/doc/UsingSkeletonValidationPackage.pdf) for guideance)
 
 
 C. Example Code
 ===============
 ```r
-library(MddAfterBbValidation)
+library(MddAfterBbVal)
 
 # add details of your database setting:
 databaseName <- 'add a shareable name for the database you are currently validating on'
@@ -68,7 +81,7 @@ cohortDatabaseSchema <- 'your work database schema'
 oracleTempSchema <- NULL
 
 # the name of the table that will be created in cohortDatabaseSchema to hold the cohorts
-cohortTable <- 'MddAfterBbValidationCohortTable'
+cohortTable <- 'MddAfterBbValCohortTable'
 
 # the location to save the prediction models results to:
 # NOTE: if you set the outputFolder to the 'Validation' directory in the 
@@ -90,7 +103,7 @@ connectionDetails <- DatabaseConnector::createConnectionDetails(dbms = dbms,
                                                                 port = port)
 
 # Now run the study:
-MddAfterBbValidation::execute(connectionDetails = connectionDetails,
+MddAfterBbVal::execute(connectionDetails = connectionDetails,
                  databaseName = databaseName,
                  cdmDatabaseSchema = cdmDatabaseSchema,
                  cohortDatabaseSchema = cohortDatabaseSchema,
@@ -104,7 +117,7 @@ MddAfterBbValidation::execute(connectionDetails = connectionDetails,
                  sampleSize = NULL)
                  
 # If the validation study runs to completion and returns results, package it up ready to share with the study owner (but remove counts less than 10) by running:
-MddAfterBbValidation::execute(connectionDetails = connectionDetails,
+MddAfterBbVal::execute(connectionDetails = connectionDetails,
                  databaseName = databaseName,
                  cdmDatabaseSchema = cdmDatabaseSchema,
                  cohortDatabaseSchema = cohortDatabaseSchema,
@@ -119,7 +132,7 @@ MddAfterBbValidation::execute(connectionDetails = connectionDetails,
                  
                  
 # If your target cohort is large use the sampleSize setting to sample from the cohort:
-MddAfterBbValidation::execute(connectionDetails = connectionDetails,
+MddAfterBbVal::execute(connectionDetails = connectionDetails,
                  databaseName = databaseName,
                  cdmDatabaseSchema = cdmDatabaseSchema,
                  cohortDatabaseSchema = cohortDatabaseSchema,
@@ -136,8 +149,8 @@ MddAfterBbValidation::execute(connectionDetails = connectionDetails,
 
 License
 =======
-  MddAfterBbValidation is licensed under Apache License 2.0
+  MddAfterBbVal is licensed under Apache License 2.0
 
 Development
 ===========
-  MddAfterBbValidation is being developed in R Studio.
+  MddAfterBbVal is being developed in R Studio.
