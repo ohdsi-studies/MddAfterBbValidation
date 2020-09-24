@@ -49,7 +49,7 @@ A1. Installing the package from GitHub
 ```r
 # To install the package from github:
 install.packages("devtools")
-devtools::install_github("ohdsi-studies/MddAfterBbVal")
+devtools::install_github("ohdsi-studies/MddAfterBbValidation")
 ```
 
 A2. Building the package inside RStudio
@@ -60,13 +60,13 @@ A2. Building the package inside RStudio
 B. Getting Started
 ===============
   1. Make sure to have either: installed (A1) or built (A2) the package 
-  2. In R, run the code in 'extras/codeToRun.R' (see [Skeleton Validation Study guide](https://github.com/OHDSI/StudyProtocolSandbox/tree/master/MddAfterBbVal/inst/doc/UsingSkeletonValidationPackage.pdf) for guideance)
+  2. In R, run the code in 'extras/codeToRun.R' (see [Skeleton Validation Study guide](https://github.com/OHDSI/StudyProtocolSandbox/tree/master/MddAfterBbValidation/inst/doc/UsingSkeletonValidationPackage.pdf) for guideance)
 
 
 C. Example Code
 ===============
 ```r
-library(MddAfterBbVal)
+library(MddAfterBbValidation)
 
 # add details of your database setting:
 databaseName <- 'add a shareable name for the database you are currently validating on'
