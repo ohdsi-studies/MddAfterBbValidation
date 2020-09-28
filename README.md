@@ -6,7 +6,7 @@ Prediction of incident major depressive disorder in cardiovascular patients usin
 - Analytics use case(s): Patient-Level Prediction
 - Study type: Clinical Application
 - Tags: OHDSI, BB, MDD
-- Study lead: Suho Jin, Ajou University School of Medicine, Korea; Seng Chan You, Ajou University School of Medicine, Korea;
+- Study lead: 
 - Study lead forums tag: [Suho_Jin](https://forums.ohdsi.org/u/Suho_Jin), [SCYou](https://forums.ohdsi.org/u/SCYou)
 - Study start date: 01/09/2020
 - Study end date: 31/12/2020
@@ -14,36 +14,40 @@ Prediction of incident major depressive disorder in cardiovascular patients usin
 - Publications: **-**
 - Results explorer: **-**
 
+- Analytics use case(s): **Patient-Level Prediction**
+- Study type: **Clinical Application**
+- Tags: **-**
+- Study lead: **Suho Jin, Seng Chan You**
+- Study lead forums tag: **[Suho_Jin](https://forums.ohdsi.org/u/Suho_Jin), [SCYou](https://forums.ohdsi.org/u/SCYou)**
+- Study start date: **Sep 28, 2020**
+- Study end date: **-**
+- Protocol: **-**
+- Publications: **-**
+- Results explorer: **-**
+
 Introduction
 ============
-This package contains code to externally validate models for the prediction quesiton <add question> developed on the database <add database>.
+This package contains code to externally validate machine learning model predicting newly diagnosed MDD patients within 1 year after initiation of beta-blocker for cardiovascular disease. The algorithm was developed on the Korean National Health Insurance Service - National Sample Cohort.
 
-Features
-========
-  - Applies models developed using the OHDSI PatientLevelPrediction package
-  - Evaluates the performance of the models on new data
-  - Packages up the results (after removing sensitive date) to share with study owner
+If you would like to participate, please let us by November 14, 2020. We hope to have all of the data analysis performed by the end of October 2020, and then will submit a manuscript with participants as co-authors. 
 
-Technology
-==========
-  MddAfterBbValidation is an R package.
+
+You may contact us at the following emails:
+
+Suho Jin: spa7652@gmail.com
+
+Seng Chan You: seng.chan.you@ohdsi.org
 
 System Requirements
 ===================
   * Requires: OMOP CDM database and connection details
   * Requires: Java runtime enviroment (for the database connection)
   * Requires: R (version 3.3.0 or higher).
-  * Sometimes required: Python 
 
 Dependencies
 ============
   * PatientLevelPrediction
-  
-Guide
-============
-A general guide for running a valdiation study package is available here: [Skeleton Validation Study guide](https://github.com/OHDSI/StudyProtocolSandbox/tree/master/MddAfterBbValidation/inst/doc/UsingSkeletonValidationPackage.pdf)
-  
-  
+
 A1. Installing the package from GitHub
 ===============
 ```r
