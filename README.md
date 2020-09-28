@@ -3,17 +3,6 @@ Prediction of incident major depressive disorder in cardiovascular patients usin
 
 <img src="https://img.shields.io/badge/Study%20Status-Started-blue.svg" alt="Study Status: Started">
 
-- Analytics use case(s): Patient-Level Prediction
-- Study type: Clinical Application
-- Tags: OHDSI, BB, MDD
-- Study lead: 
-- Study lead forums tag: [Suho_Jin](https://forums.ohdsi.org/u/Suho_Jin), [SCYou](https://forums.ohdsi.org/u/SCYou)
-- Study start date: 01/09/2020
-- Study end date: 31/12/2020
-- Protocol: **-**
-- Publications: **-**
-- Results explorer: **-**
-
 - Analytics use case(s): **Patient-Level Prediction**
 - Study type: **Clinical Application**
 - Tags: **-**
