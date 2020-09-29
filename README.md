@@ -10,7 +10,7 @@ Prediction of incident major depressive disorder in cardiovascular patients usin
 - Study lead forums tag: **[Suho_Jin](https://forums.ohdsi.org/u/Suho_Jin), [SCYou](https://forums.ohdsi.org/u/SCYou)**
 - Study start date: **Sep 28, 2020**
 - Study end date: **-**
-- Protocol: **-**
+- Protocol: **[Protocol](https://github.com/ohdsi-studies/MddAfterBbValidation/blob/master/documents/MddAfterBbProtocol.docx)**
 - Publications: **-**
 - Results explorer: **-**
 
