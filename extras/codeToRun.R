@@ -1,33 +1,35 @@
 library(MddAfterBbValidation)
 
 # add details of your database setting:
-databaseName <- 'CDMPv531'
+databaseName <- 'add a shareable name for the database you are currently validating on'
 
 # add the cdm database schema with the data
-cdmDatabaseSchema <- 'CDMPv531.dbo'
+cdmDatabaseSchema <- 'your cdm database schema for the validation'
 
 # add the work database schema this requires read/write privileges
-cohortDatabaseSchema <- 'cohortDb.dbo'
+cohortDatabaseSchema <- 'your work database schema'
 
 # if using oracle please set the location of your temp schema
 oracleTempSchema <- NULL
 
 # the name of the table that will be created in cohortDatabaseSchema to hold the cohorts
-cohortTable <- 'SHJin_MddAfterBbValidation'
+cohortTable <- 'MddAfterBbValidationCohortTable'
 
 # the location to save the prediction models results to:
-outputFolder <- '/home/jshsh7553/output/MddAfterBb/Validation'
+outputFolder <- '../Validation'
 
 # add connection details:
-options(fftempdir = '/home/jshsh7553/temp')
-dbms <- "sql server"
-user <- 'jshsh7553'
-pw <- 'wlstn!4852gh'
-server <- '128.1.99.58'
+options(fftempdir = 'T:/fftemp')
+dbms <- "pdw"
+user <- NULL
+pw <- NULL
+server <- Sys.getenv('server')
+port <- Sys.getenv('port')
 connectionDetails <- DatabaseConnector::createConnectionDetails(dbms = dbms,
                                                                 server = server,
                                                                 user = user,
-                                                                password = pw)
+                                                                password = pw,
+                                                                port = port)
 
 # Now run the study
 MddAfterBbValidation::execute(connectionDetails = connectionDetails,
@@ -37,7 +39,7 @@ MddAfterBbValidation::execute(connectionDetails = connectionDetails,
                               oracleTempSchema = oracleTempSchema,
                               cohortTable = cohortTable,
                               outputFolder = outputFolder,
-                              createCohorts = F,
+                              createCohorts = T,
                               runValidation = T,
                               packageResults = F,
                               minCellCount = 5,
