@@ -2973,6 +2973,528 @@
             ]},
             "name": "cardiovascular beta-blockers",
             "id": 16
+          },
+          {
+            "expression": {"items": [
+              {
+                "isExcluded": true,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 1319998,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "149",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "Acebutolol",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Ingredient",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": true,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 1314002,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "1202",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "Atenolol",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Ingredient",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": true,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 4.001943E7,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "371065",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "Betaxolol Oral Tablet",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Clinical Drug Form",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": true,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 1338005,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "19484",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "Bisoprolol",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Ingredient",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 1346823,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "20352",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "carvedilol",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Ingredient",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": true,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 1.906358E7,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "49737",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "esmolol",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Ingredient",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": true,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 1386957,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "6185",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "Labetalol",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Ingredient",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": true,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 1307046,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "6918",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "Metoprolol",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Ingredient",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": true,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 1313200,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "7226",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "Nadolol",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Ingredient",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": true,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 1314577,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "31555",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "nebivolol",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Ingredient",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": true,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 1327978,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "7973",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "Penbutolol",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Ingredient",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": true,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 1345858,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "8332",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "Pindolol",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Ingredient",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 1353766,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "8787",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "Propranolol",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Ingredient",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": true,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 1370109,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "9947",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "Sotalol",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Ingredient",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": true,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 4.008792E7,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "374135",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "Timolol Oral Tablet",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Clinical Drug Form",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              }
+            ]},
+            "name": "high lipophilic beta blocker",
+            "id": 17
+          },
+          {
+            "expression": {"items": [
+              {
+                "isExcluded": true,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 1319998,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "149",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "Acebutolol",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Ingredient",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": true,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 1314002,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "1202",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "Atenolol",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Ingredient",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": true,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 4.001943E7,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "371065",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "Betaxolol Oral Tablet",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Clinical Drug Form",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": true,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 1338005,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "19484",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "Bisoprolol",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Ingredient",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 1346823,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "20352",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "carvedilol",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Ingredient",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": true,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 1.906358E7,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "49737",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "esmolol",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Ingredient",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 1386957,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "6185",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "Labetalol",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Ingredient",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 1307046,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "6918",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "Metoprolol",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Ingredient",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": true,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 1313200,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "7226",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "Nadolol",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Ingredient",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": true,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 1314577,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "31555",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "nebivolol",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Ingredient",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": true,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 1327978,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "7973",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "Penbutolol",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Ingredient",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 1345858,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "8332",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "Pindolol",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Ingredient",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 1353766,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "8787",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "Propranolol",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Ingredient",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": true,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 1370109,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "9947",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "Sotalol",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Ingredient",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 4.008792E7,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "374135",
+                  "VOCABULARY_ID": "RxNorm",
+                  "CONCEPT_NAME": "Timolol Oral Tablet",
+                  "DOMAIN_ID": "Drug",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Clinical Drug Form",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              }
+            ]},
+            "name": "moderate to high lipophilic beta blocker",
+            "id": 18
           }
         ],
         "EndStrategy": {"CustomEra": {
@@ -3182,7 +3704,7 @@
             "AgeAtStart": {
               "Op": "gte",
               "Extent": null,
-              "Value": 20
+              "Value": 18
             },
             "GapDays": null,
             "CodesetId": 16,
@@ -3205,8 +3727,8 @@
       },
       "createdDate": "2020-09-21T12:19:49.873+0000",
       "createdBy": "jshsh7553",
-      "name": "Cardiovascular Beta-blockers",
-      "modifiedDate": "2020-09-24T00:42:49.897+0000",
+      "name": "All Cardiovascular Beta-blockers",
+      "modifiedDate": "2020-10-07T04:37:56.790+0000",
       "description": null,
       "expressionType": "SIMPLE_EXPRESSION",
       "modifiedBy": "jshsh7553",
@@ -3218,65 +3740,60 @@
       "seed": null,
       "variance": 0.01
     }},
-    {"RandomForestSettings": {
-      "maxDepth": [
-        4,
-        10,
-        17
-      ],
-      "varImp": true,
+    {"LassoLogisticRegressionSettings": {
       "seed": null,
-      "mtries": -1,
-      "ntrees": 500
+      "variance": 0.04
     }},
-    {"GradientBoostingMachineSettings": {
-      "maxDepth": [
-        4,
-        6,
-        17
-      ],
-      "minRows": 20,
+    {"LassoLogisticRegressionSettings": {
       "seed": null,
-      "nthread": 20,
-      "ntrees": [
-        10,
-        100
-      ],
-      "learnRate": [
-        0.01,
-        0.1
-      ]
+      "variance": 0.07
+    }},
+    {"LassoLogisticRegressionSettings": {
+      "seed": null,
+      "variance": 0.1
+    }},
+    {"LassoLogisticRegressionSettings": {
+      "seed": null,
+      "variance": 0.13
+    }},
+    {"LassoLogisticRegressionSettings": {
+      "seed": null,
+      "variance": 0.16
+    }},
+    {"LassoLogisticRegressionSettings": {
+      "seed": null,
+      "variance": 0.19
     }}
   ],
   "name": "MddAfterBbValidation",
   "modifiedDate": null,
   "covariateSettings": [{
     "VisitCountMediumTerm": false,
-    "ObservationShortTerm": true,
+    "ObservationShortTerm": false,
     "shortTermStartDays": -30,
     "MeasurementRangeGroupShortTerm": false,
-    "ConditionOccurrenceLongTerm": true,
+    "ConditionOccurrenceLongTerm": false,
     "DrugEraStartLongTerm": false,
-    "VisitCountShortTerm": true,
+    "VisitCountShortTerm": false,
     "Chads2Vasc": false,
     "ConditionGroupEraStartLongTerm": false,
-    "ConditionEraShortTerm": true,
+    "ConditionEraShortTerm": false,
     "Dcsi": false,
     "DrugGroupEraLongTerm": true,
-    "DrugGroupEraShortTerm": true,
+    "DrugGroupEraShortTerm": false,
     "ConditionEraStartLongTerm": false,
     "temporal": false,
     "DemographicsIndexMonth": false,
-    "ConditionOccurrencePrimaryInpatientLongTerm": true,
+    "ConditionOccurrencePrimaryInpatientLongTerm": false,
     "ConditionEraAnyTimePrior": false,
     "addDescendantsToInclude": false,
     "ConditionGroupEraStartMediumTerm": false,
     "ProcedureOccurrenceLongTerm": true,
-    "DrugExposureLongTerm": true,
+    "DrugExposureLongTerm": false,
     "DrugEraStartShortTerm": false,
     "DistinctIngredientCountMediumTerm": false,
     "DistinctMeasurementCountShortTerm": false,
-    "MeasurementRangeGroupLongTerm": true,
+    "MeasurementRangeGroupLongTerm": false,
     "ConditionGroupEraOverlapping": false,
     "attr_fun": "getDbDefaultCovariateData",
     "MeasurementRangeGroupMediumTerm": false,
@@ -3287,29 +3804,29 @@
     "ConditionOccurrenceAnyTimePrior": false,
     "DistinctConditionCountLongTerm": false,
     "MeasurementValueLongTerm": false,
-    "DrugEraShortTerm": true,
-    "DrugGroupEraAnyTimePrior": true,
+    "DrugEraShortTerm": false,
+    "DrugGroupEraAnyTimePrior": false,
     "DrugEraOverlapping": false,
     "ConditionOccurrencePrimaryInpatientAnyTimePrior": false,
     "ConditionEraMediumTerm": false,
     "ConditionEraOverlapping": false,
     "ConditionEraStartShortTerm": false,
     "ObservationAnyTimePrior": false,
-    "VisitConceptCountShortTerm": true,
+    "VisitConceptCountShortTerm": false,
     "DemographicsEthnicity": false,
     "DistinctIngredientCountLongTerm": false,
-    "ConditionOccurrencePrimaryInpatientShortTerm": true,
-    "DemographicsAgeGroup": true,
+    "ConditionOccurrencePrimaryInpatientShortTerm": false,
+    "DemographicsAgeGroup": false,
     "DistinctProcedureCountShortTerm": false,
     "DistinctObservationCountMediumTerm": false,
     "includedCovariateConceptIds": [],
     "DrugGroupEraStartShortTerm": false,
     "addDescendantsToExclude": false,
-    "DrugEraLongTerm": true,
+    "DrugEraLongTerm": false,
     "DistinctConditionCountShortTerm": false,
-    "ConditionGroupEraShortTerm": true,
+    "ConditionGroupEraShortTerm": false,
     "ConditionEraStartMediumTerm": false,
-    "VisitCountLongTerm": true,
+    "VisitCountLongTerm": false,
     "DemographicsRace": false,
     "ProcedureOccurrenceAnyTimePrior": false,
     "DistinctObservationCountLongTerm": false,
@@ -3317,35 +3834,35 @@
     "ProcedureOccurrenceMediumTerm": false,
     "CharlsonIndex": false,
     "DemographicsPriorObservationTime": false,
-    "MeasurementShortTerm": true,
+    "MeasurementShortTerm": false,
     "DistinctProcedureCountMediumTerm": false,
-    "ConditionEraLongTerm": true,
+    "ConditionEraLongTerm": false,
     "DrugGroupEraStartLongTerm": false,
     "DemographicsGender": true,
     "DeviceExposureAnyTimePrior": false,
-    "ObservationLongTerm": true,
+    "ObservationLongTerm": false,
     "DemographicsIndexYearMonth": false,
     "ConditionOccurrenceMediumTerm": false,
     "longTermStartDays": -365,
-    "DemographicsAge": false,
-    "DrugGroupEraOverlapping": true,
+    "DemographicsAge": true,
+    "DrugGroupEraOverlapping": false,
     "DistinctMeasurementCountLongTerm": false,
     "MeasurementRangeGroupAnyTimePrior": false,
     "DistinctConditionCountMediumTerm": false,
     "DrugGroupEraMediumTerm": false,
-    "ProcedureOccurrenceShortTerm": true,
+    "ProcedureOccurrenceShortTerm": false,
     "ObservationMediumTerm": false,
-    "ConditionGroupEraAnyTimePrior": true,
+    "ConditionGroupEraAnyTimePrior": false,
     "Chads2": false,
     "DrugExposureAnyTimePrior": false,
-    "DeviceExposureLongTerm": true,
+    "DeviceExposureLongTerm": false,
     "DemographicsTimeInCohort": false,
     "DistinctMeasurementCountMediumTerm": false,
     "MeasurementValueShortTerm": false,
     "DeviceExposureMediumTerm": false,
     "ConditionGroupEraStartShortTerm": false,
     "ConditionOccurrencePrimaryInpatientMediumTerm": false,
-    "MeasurementLongTerm": true,
+    "MeasurementLongTerm": false,
     "DemographicsIndexYear": false,
     "MeasurementValueMediumTerm": false,
     "DrugEraStartMediumTerm": false,
@@ -3353,12 +3870,12 @@
     "DistinctObservationCountShortTerm": false,
     "DrugEraMediumTerm": false,
     "ConditionGroupEraLongTerm": true,
-    "DrugExposureShortTerm": true,
+    "DrugExposureShortTerm": false,
     "DistinctIngredientCountShortTerm": false,
-    "DeviceExposureShortTerm": true,
+    "DeviceExposureShortTerm": false,
     "mediumTermStartDays": -180,
     "DemographicsPostObservationTime": false,
-    "VisitConceptCountLongTerm": true,
+    "VisitConceptCountLongTerm": false,
     "VisitConceptCountMediumTerm": false,
     "excludedCovariateConceptIds": [],
     "ConditionGroupEraMediumTerm": false,
@@ -3366,7 +3883,7 @@
     "DistinctProcedureCountLongTerm": false,
     "DrugEraAnyTimePrior": false,
     "endDays": 0,
-    "ConditionOccurrenceShortTerm": true
+    "ConditionOccurrenceShortTerm": false
   }],
   "modifiedBy": null,
   "conceptSets": [],
