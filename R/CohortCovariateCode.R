@@ -43,6 +43,7 @@ getCohortCovariateData <- function(connection,
                                    aggregated,
                                    cohortId,
                                    covariateSettings) {
+  covariateData <- Andromeda::andromeda()
 
   # Some SQL to construct the covariate:
   sql <- paste(
@@ -68,9 +69,16 @@ getCohortCovariateData <- function(connection,
                            countval = covariateSettings$count)
   sql <- SqlRender::translate(sql, targetDialect = attr(connection, "dbms"))
   # Retrieve the covariate:
-  covariates <- DatabaseConnector::querySql.ffdf(connection, sql)
-  # Convert colum names to camelCase:
-  colnames(covariates) <- SqlRender::snakeCaseToCamelCase(colnames(covariates))
+  DatabaseConnector::querySqlToAndromeda(connection = connection, 
+                                         sql = sql, 
+                                         andromeda = covariateData, 
+                                         andromedaTableName = "covariates",
+                                         snakeCaseToCamelCase = TRUE)
+  
+  # previous codes using ffdf
+  # covariates <- DatabaseConnector::querySql.ffdf(connection, sql)
+  # # Convert colum names to camelCase:
+  # colnames(covariates) <- SqlRender::snakeCaseToCamelCase(colnames(covariates))
   # Construct covariate reference:
   sql <- "select @covariate_id as covariate_id, '@concept_set' as covariate_name,
   456 as analysis_id, -1 as concept_id"
@@ -78,8 +86,13 @@ getCohortCovariateData <- function(connection,
                            concept_set=paste(covariateSettings$covariateName,' days before:', covariateSettings$startDay, 'days after:', covariateSettings$endDay))
   sql <- SqlRender::translate(sql, targetDialect = attr(connection, "dbms"))
   # Retrieve the covariateRef:
-  covariateRef  <- DatabaseConnector::querySql.ffdf(connection, sql)
-  colnames(covariateRef) <- SqlRender::snakeCaseToCamelCase(colnames(covariateRef))
+  DatabaseConnector::querySqlToAndromeda(connection = connection, 
+                                         sql = sql, 
+                                         andromeda = covariateData, 
+                                         andromedaTableName = "covariateRef",
+                                         snakeCaseToCamelCase = TRUE)
+  # covariateRef  <- DatabaseConnector::querySql.ffdf(connection, sql)
+  # colnames(covariateRef) <- SqlRender::snakeCaseToCamelCase(colnames(covariateRef))
 
   analysisRef <- data.frame(analysisId = 456,
                             analysisName = "cohort covariate",
@@ -88,15 +101,19 @@ getCohortCovariateData <- function(connection,
                             endDay = 0,
                             isBinary = "Y",
                             missingMeansZero = "Y")
-  analysisRef <- ff::as.ffdf(analysisRef)
+  covariateData$analysisRef <- analysisRef
+  # analysisRef <- ff::as.ffdf(analysisRef)
 
   metaData <- list(sql = sql, call = match.call())
-  result <- list(covariates = covariates,
-                 covariateRef = covariateRef,
-                 analysisRef=analysisRef,
-                 metaData = metaData)
-  class(result) <- "covariateData"
-  return(result)
+  attr(covariateData, "metaData") <- metaData
+  class(covariateData) <- "CovariateData"
+  # result <- list(covariates = covariates,
+  #                covariateRef = covariateRef,
+  #                analysisRef=analysisRef,
+  #                metaData = metaData)
+  # class(result) <- "covariateData"
+  # return(result)
+  return(covariateData)
 }
 
 
